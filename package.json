@@ -1,5 +1,6 @@
 {
   "name": "simd-dna-web-simulator",
+  "homepage": "https://uc-davis-molecular-computing.github.io/simd-dna-web-simulator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
