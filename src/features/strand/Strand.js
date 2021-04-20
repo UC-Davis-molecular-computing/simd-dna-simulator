@@ -8,7 +8,7 @@ export function Strand () {
   return (
   <div>
       <textarea
-        placeholder="Enter the strand name, followed by the domain names, followed by a boolean value indicating whether the strand is complementary to the top strand (dashed lines) or not (solid line.) (e.g. Zero-first a b c false) Multiple strand types can be added at once, one strand type per line."
+        placeholder="Enter the strand name, followed by the domain names, followed by a boolean value indicating whether the strand is complementary to the top strand (dashed lines) or not (solid line.) Optionally, you can include a hex color code at the end to assign a color to your strand (default is black.) (e.g. Zero-first a b c false #0066ff) Multiple strand types can be added at once, one strand type per line."
         value={strandInput}
         onChange={(e) => dispatch(setStrandInput(e.target.value))}>
       </textarea>
@@ -25,16 +25,16 @@ export function Strand () {
           <table>
               <tbody>
                 {Array.from(strandTypes.keys()).map((strandName) => {
-                  const cellData = strandTypes.get(strandName)
+                  const strandData = strandTypes.get(strandName)
                   const left = '\u25C0'
                   const right = '\u25B6'
-                  return (<tr>
+                  return (<tr style={{ color: strandData.color }}>
                             <td>{strandName}</td>
-                            {cellData.is_complementary && <td>{left}</td>}
-                            {cellData.domains.map((domainName) => {
+                            {strandData.is_complementary && <td>{left}</td>}
+                            {strandData.domains.map((domainName) => {
                               return (<td>{domainName}</td>)
                             })}
-                            {!cellData.is_complementary && <td>{right}</td>}
+                            {!strandData.is_complementary && <td>{right}</td>}
                         </tr>)
                 })}
               </tbody>

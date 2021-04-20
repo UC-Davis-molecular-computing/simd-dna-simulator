@@ -18,6 +18,16 @@ export const strandSlice = createSlice({
         if (item !== '') {
           let strings = item.split(' ')
           strings = strings.filter(item => item)
+          const hexRegex = /^#?[0-9A-Fa-f]{6}$/
+          let color = '0x000000'
+
+          if (strings.length > 0 && strings[strings.length - 1].match(hexRegex)) {
+            color = strings[strings.length - 1]
+            strings = strings.slice(0, -1)
+            if (!color.startsWith('#')) {
+              color = '#' + color
+            }
+          }
 
           if (strings.length <= 2) {
             newInput += item + '\n'
@@ -26,7 +36,7 @@ export const strandSlice = createSlice({
           } else if (strings[strings.length - 1] !== 'true' && strings[strings.length - 1] !== 'false') {
             newInput += item + '\n'
           } else {
-            state.strandTypes = state.strandTypes.set(strings[0], { domains: strings.slice(1, -1), is_complementary: strings[strings.length - 1] === 'true' })
+            state.strandTypes = state.strandTypes.set(strings[0], { domains: strings.slice(1, -1), is_complementary: strings[strings.length - 1] === 'true', color: color })
           }
         }
       })

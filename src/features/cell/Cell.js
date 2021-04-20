@@ -28,7 +28,7 @@ export function Cell () {
                 <tbody>
                     {Array.from(cellTypes.keys()).map((cellName) => {
                       const cellData = cellTypes.get(cellName)
-                      return (<tr>
+                      return (<tr key={cellName}>
                             <td>{cellName}</td>
                             {cellData.domains.map((domainName) => {
                               return (<td>{domainName}</td>)
