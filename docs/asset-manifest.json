@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/simd-dna-web-simulator/static/css/main.00247086.chunk.css",
-    "main.js": "/simd-dna-web-simulator/static/js/main.4bebec91.chunk.js",
-    "main.js.map": "/simd-dna-web-simulator/static/js/main.4bebec91.chunk.js.map",
+    "main.js": "/simd-dna-web-simulator/static/js/main.a1ef0626.chunk.js",
+    "main.js.map": "/simd-dna-web-simulator/static/js/main.a1ef0626.chunk.js.map",
     "runtime-main.js": "/simd-dna-web-simulator/static/js/runtime-main.8136fe17.js",
     "runtime-main.js.map": "/simd-dna-web-simulator/static/js/runtime-main.8136fe17.js.map",
-    "static/js/2.d9730b3e.chunk.js": "/simd-dna-web-simulator/static/js/2.d9730b3e.chunk.js",
-    "static/js/2.d9730b3e.chunk.js.map": "/simd-dna-web-simulator/static/js/2.d9730b3e.chunk.js.map",
+    "static/js/2.e083e2cc.chunk.js": "/simd-dna-web-simulator/static/js/2.e083e2cc.chunk.js",
+    "static/js/2.e083e2cc.chunk.js.map": "/simd-dna-web-simulator/static/js/2.e083e2cc.chunk.js.map",
     "index.html": "/simd-dna-web-simulator/index.html",
     "static/css/main.00247086.chunk.css.map": "/simd-dna-web-simulator/static/css/main.00247086.chunk.css.map",
-    "static/js/2.d9730b3e.chunk.js.LICENSE.txt": "/simd-dna-web-simulator/static/js/2.d9730b3e.chunk.js.LICENSE.txt"
+    "static/js/2.e083e2cc.chunk.js.LICENSE.txt": "/simd-dna-web-simulator/static/js/2.e083e2cc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8136fe17.js",
-    "static/js/2.d9730b3e.chunk.js",
+    "static/js/2.e083e2cc.chunk.js",
     "static/css/main.00247086.chunk.css",
-    "static/js/main.4bebec91.chunk.js"
+    "static/js/main.a1ef0626.chunk.js"
   ]
 }
