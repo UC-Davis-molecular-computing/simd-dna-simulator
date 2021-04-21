@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-
-const { List } = require('immutable')
+import { List } from 'immutable'
 
 const initialState = {
   instructionInput: '',

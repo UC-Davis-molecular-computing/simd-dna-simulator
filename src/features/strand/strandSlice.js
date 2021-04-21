@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-
-const { Map } = require('immutable')
+import { Map } from 'immutable'
 
 const initialState = {
   strandInput: '',
